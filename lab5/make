@@ -1,0 +1,3 @@
+set term png
+set output "tcpchain.png"
+plot "tcpchain1.cwnd" with linespoints, "tcpchain2.cwnd" with linespoints

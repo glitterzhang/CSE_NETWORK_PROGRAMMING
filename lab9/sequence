@@ -1,0 +1,3 @@
+set term png
+set output "project-seq.png"
+plot "seq1-normal.data" with points, "seq2-re.data" with points

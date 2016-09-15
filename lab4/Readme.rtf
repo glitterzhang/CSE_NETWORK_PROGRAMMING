@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf110
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\froman\fcharset0 TimesNewRomanPSMT;
+\f3\froman\fcharset0 Times-Roman;\f4\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red26\green26\blue26;\red255\green255\blue255;
+}
+\margl1440\margr1440\vieww25100\viewh13400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 // Lab 4\
+// Network topology\
+//\
+//         10.1.1.0        10.1.1.2         10.1.1.3\
+
+\f1 //   n0\'a1\'aa\'a1\'aa\'a1\'aa\'a1\'aa n1 \'a1\'aa\'a1\'aa\'a1\'aa\'a1\'aa n2\'a1\'aa\'a1\'aa\'a1\'aan3
+\f0  \
+//\
+
+\f2 This network topology has 4 nodes:
+\f0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Each link has a bandwidth of 1 Mbps and delay of 10ms Install a UDP echoClient in node 1 and a UDP echoServer in node 3.  5 packets will be sent from node 0 to  node 3. It will go through the intermediate nodes  1 and 2.\
+\
+To run the program :\
+./waf --run scratch/first-1\
+\
+Tracing information of each event on each node will be outputted into 
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 udpchain.tr
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 .\
+\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f4\fs26 \cf3 \cb4 \strokec3 Then read the pcap files as follows:\
+$\'a0\'a0 tcpdump -nn -tt -v -K -r\'a0 udpchain-0-0.pcap
+\f3\fs24 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+}
